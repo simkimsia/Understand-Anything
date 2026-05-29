@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "path": "src/pricing.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "functions": [
+        { "name": "compute_discount", "startLine": 10, "endLine": 48, "params": ["order", "customer"] },
+        { "name": "_tiny", "startLine": 50, "endLine": 52, "params": [] }
+      ],
+      "classes": [
+        { "name": "PricingEngine", "startLine": 55, "endLine": 139, "methods": ["apply", "rollback", "audit"], "properties": ["rules"] }
+      ],
+      "exports": [
+        { "name": "compute_discount", "line": 10, "isDefault": false },
+        { "name": "PricingEngine", "line": 55, "isDefault": false }
+      ]
+    },
+    {
+      "path": "src/util/log.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "functions": [
+        { "name": "log", "startLine": 3, "endLine": 6, "params": ["msg"] }
+      ],
+      "exports": [{ "name": "log", "line": 3, "isDefault": false }]
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "totalLines": 30
+    }
+  ]
+}

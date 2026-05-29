@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    { "id": "file:src/pricing.py", "summary": "Core pricing rules engine computing tiered order discounts.", "tags": ["domain","pricing","core"], "complexity": "complex" },
+    { "id": "function:src/pricing.py:compute_discount", "summary": "Computes the discount for an order given customer tier and active rules.", "tags": ["pricing","pure-function"], "complexity": "moderate" },
+    { "id": "class:src/pricing.py:PricingEngine", "summary": "Stateful engine applying, auditing and rolling back pricing rule sets.", "tags": ["engine","stateful"], "complexity": "complex" },
+    { "id": "config:pyproject.toml", "summary": "Project + dependency manifest; configures the build and tooling.", "tags": ["config","build"], "complexity": "simple" }
+  ],
+  "edges": [
+    { "source": "file:src/pricing.py", "target": "file:src/util/log.py", "type": "calls", "direction": "forward", "weight": 0.8 },
+    { "source": "file:src/pricing.py", "target": "file:src/pricing.py", "type": "contains", "direction": "forward", "weight": 1.0 }
+  ]
+}
